@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default function Input() {
-  const [value, setValue] = React.useState('');
+export default function Button() {
+  const [counter, setCounter] = React.useState(0);
 
-  const handleChange = () => {};
+  const handleClick = () => {
+    setCounter((prev) => prev + 1);
+  };
 
-  return <input value={value} onChange={handleChange} />;
+  return <button onClick={handleClick}>{counter}</button>;
 }
