@@ -1,11 +1,11 @@
 import React from 'react';
 
 export default function Button() {
-  const [counter, setCounter] = React.useState(0);
+  const [count, setCount] = React.useState(0);
 
   const handleClick = () => {
-    setCounter((prev) => prev + 1);
+    setCount((prev) => prev + 1);
   };
 
-  return <button onClick={handleClick}>{counter}</button>;
+  return <button onClick={handleClick}>{count}</button>;
 }
