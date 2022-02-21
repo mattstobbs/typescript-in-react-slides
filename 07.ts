@@ -1,5 +1,5 @@
 export {};
 
-function includesHash(word: string) {
+function includesHash(word: string | undefined) {
 
 }
